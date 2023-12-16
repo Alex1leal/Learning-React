@@ -1,0 +1,79 @@
+.jl-followCard {
+  display:
+    flex;
+  align-items: center;
+  color: #fff;
+  font-size: .8rem;
+
+  justify-content: space-between;
+
+}
+.jl-followCard-text {
+  display: block;
+   
+}
+
+.jl-followCard-header {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.jl-followCard-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.jl-followCard-avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 100px
+}
+
+.jl-followCard-infoUserName {
+  opacity: .7;
+}
+
+.jl-followCard-button {
+
+  cursor: pointer;
+  margin-left: 16px;
+  border-radius: 999px;
+  padding: 6px 16px;
+  font-weight: bold;
+  border: 1px solid #000;
+  transition: .3s ease background-color;
+}
+.jl-followCard-button:hover {
+  opacity: .8;
+  background-color: #09f;
+ 
+}
+
+.jl-followCard-button.is-following {
+  border: 1px solid #bbb;
+  background: transparent;
+  color: #fff;
+width: 140px;
+
+}
+
+.jl-followCard-button.is-following:hover {
+  background: rgb(255,0,0,0.178);
+  color: red;
+  border: 1px solid red;
+  transition: .3s ease all;
+  opacity: 1;
+}
+.jl-followCard-button.is-following:hover .jl-followCard-text{
+  display: none;
+}
+
+
+.jl-followCard-button.is-following:hover .jl-followCard-stopFollow{
+  display: block ;
+}
+
+.jl-followCard-stopFollow{
+  display: none ;
+}

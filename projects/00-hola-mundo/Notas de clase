@@ -1,0 +1,24 @@
+React me permite no solo pasar funciones en forma de props,
+ sino tambien elementos.
+
+ Un componente es la factoría de elementos. Es una función que al ejecutarla te devuelve un elemento.
+ Y el elemento, es lo que renderiza React
+
+ Los componentes crean elementos y los elementos son lo que  renderiza react
+
+ En resumen: Componente=Función que devuelve elemento. Y react, renderiza el elemento
+
+ NO SEAS BESTIA! NUNCA, JAMAS, MODIFIQUES NI MUTES UNA PROP. En lugar de esto crea una constante 
+ LAS PROPS DEBEN SER INMUTABLES
+
+ Los children: son una props especial que básicamente es todo lo
+ que envuelve un elemento o un componente ejemplo 
+ <button> Jesus leal </button > Acá el children es mi nombre, es decir la cadena de texto
+
+ Cosas a tener en cuenta, en este ejemplo renderizamos un  texto, pero podríamos tener cualquier cosa
+
+ Los Hook,son una utilidad de React, en realidad son la vida de este framework, 
+ ya que te permiten añadir funcionalidad a tu aplicación
+
+ O, poder ejecutar código arbitrario, cuanto ocurren ciertas cosas en tus componentes
+ El punto es tener algún tipo de funcionalidad para mejorar tus componentes.
