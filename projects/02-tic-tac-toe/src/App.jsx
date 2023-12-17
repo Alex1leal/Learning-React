@@ -25,28 +25,26 @@ function App() {
     setWinner(null);
     resetGameStorage();
   };
-  //Aca gestionamos lo referente a las actualizaciones del tablero (board)
+  // Aca gestionamos lo referente a las actualizaciones del tablero (board)
   const updateBoard = (index) => {
-    //si el tablero ya tiene algo, no hace nada
+    // si el tablero ya tiene algo, no hace nada
     if (board[index] || winner) return;
 
-    //actualiza el tablero
+    // actualiza el tablero
     const newBoard = [...board];
     newBoard[index] = turn;
 
-    setBoard(newBoard); //asincrono
-    //cambia el turno
+    setBoard(newBoard); // asincrono
+    // cambia el turno
 
     const newTurn = turn === TURNS.X ? TURNS.O : TURNS.X;
     setTurn(newTurn);
 
-    //guarda la partida aquí
-    saveGameToStorage(
-      {
-        board: newBoard,
-        turn: newTurn,
-      }
-    );
+    // guarda la partida aquí
+    saveGameToStorage({
+      board: newBoard,
+      turn: newTurn
+    });
 
     //revisa si hay un ganador
     const newWinner = checkWinnerForm(newBoard);
